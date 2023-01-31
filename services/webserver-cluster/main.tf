@@ -21,7 +21,7 @@ resource "aws_launch_configuration" "example" {
     create_before_destroy = true
   }
 }
-
+#This creates the autoscaling group#
 resource "aws_autoscaling_group" "example" {
   launch_configuration = aws_launch_configuration.example.name
   vpc_zone_identifier  = data.aws_subnets.default.ids
