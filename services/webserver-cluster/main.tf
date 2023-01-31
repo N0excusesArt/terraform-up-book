@@ -1,6 +1,6 @@
 terraform {
   required_version = ">= 1.0.0, < 2.0.0"
-  #temp bug fix///
+
 
 }
 
@@ -141,7 +141,7 @@ data "terraform_remote_state" "db" {
     region = "us-east-2"
   }
 }
-#//This are the locals port numbers to be used. //# 
+#//These are the locals port numbers to be used. //# 
 locals {
   http_port    = 80
   any_port     = 0
